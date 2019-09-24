@@ -4,7 +4,7 @@
 import requests
 import json
 
-from .model.precipitation import Precipitation
+from .models.precipitation import Precipitation
 
 LOCATION_TEMPLATE = {
     'sapporo': [141.350755, 43.068661],
