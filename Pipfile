@@ -6,9 +6,16 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 autopep8 = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-randomly = "*"
 
 [packages]
 requests = "*"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+test = "pytest -v --cov=weatherlib --cov-report=html"
