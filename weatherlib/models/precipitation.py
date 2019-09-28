@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import datetime
+import json
 
 
 class Precipitation():
@@ -17,7 +18,7 @@ class Precipitation():
         self.data = data
 
     def __str__(self):
-        return str(self.data)
+        return json.dumps(self.data)
 
     @property
     def current(self):
