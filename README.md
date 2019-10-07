@@ -1,4 +1,4 @@
-# weatherlib
+# weatherlib [![Build Status](https://travis-ci.com/doara-developer/weatherlib.svg?branch=master)](https://travis-ci.com/doara-developer/weatherlib)
 This library is wrapper of yahoo weather api.
 
 ## Usage
