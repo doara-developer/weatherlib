@@ -18,4 +18,5 @@ requests = "*"
 python_version = "3.7"
 
 [scripts]
-test = "pytest -v --cov=weatherlib --cov-report=html"
+tests = "pytest -v"
+test-cov = "pytest -v --cov=weatherlib --cov-report=html"

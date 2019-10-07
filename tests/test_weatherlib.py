@@ -47,7 +47,7 @@ def test_get_precipitation(mocker):
     result = weatherlib.get_precipitation(location='tokyo')
     assert result.is_rain is False
     assert result.current == resp_temp['Feature'][0]['Property']['WeatherList']['Weather'][0]['Date']
-    assert str(result) == str(resp_temp['Feature'][0]['Property']['WeatherList']['Weather'])
+    assert str(result) == json.dumps(resp_temp['Feature'][0]['Property']['WeatherList']['Weather'])
     assert result.detail == _convert_detail_result(resp_temp['Feature'][0]['Property']['WeatherList']['Weather'])
 
 
@@ -87,7 +87,7 @@ def test_get_precipitation_manual(mocker):
     result = weatherlib.get_precipitation(latitude=100.0, longitude=100.0)
     assert result.is_rain is True
     assert result.current == resp_temp['Feature'][0]['Property']['WeatherList']['Weather'][0]['Date']
-    assert str(result) == str(resp_temp['Feature'][0]['Property']['WeatherList']['Weather'])
+    assert str(result) == json.dumps(resp_temp['Feature'][0]['Property']['WeatherList']['Weather'])
     assert result.detail == _convert_detail_result(resp_temp['Feature'][0]['Property']['WeatherList']['Weather'])
 
 
