@@ -1,4 +1,5 @@
-# weatherlib [![Build Status](https://travis-ci.com/doara-developer/weatherlib.svg?branch=master)](https://travis-ci.com/doara-developer/weatherlib)
+# weatherlib [![Build Status](https://travis-ci.com/doara-developer/weatherlib.svg?branch=master)](https://travis-ci.com/doara-developer/weatherlib) <img alt="Run pytest" src="https://github.com/doara-developer/weatherlib/workflows/Run pytest/badge.svg"></a>
+
 This library is wrapper of yahoo weather api.
 
 ## Usage
